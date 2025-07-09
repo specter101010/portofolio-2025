@@ -6,7 +6,7 @@ import { CopyButton } from '@/components/animate-ui/buttons/copy'
 function CodeEditor({
   children: code,
   lang,
-  theme = 'github-dark',
+  theme = '#17153B',
   className,
   header = true,
   dots = true,
@@ -72,7 +72,7 @@ function CodeEditor({
       )}
       {...props}>
       {header ? (
-        <div className="bg-muted border-b border-border/75 relative flex flex-row items-center justify-between gap-y-2 h-10 px-4">
+        <div className="bg-[#17154B] border-b border-border/75 relative flex flex-row items-center justify-between gap-y-2 h-10 px-4">
           {dots && (
             <div className="flex flex-row gap-x-2">
               <div className="size-2 rounded-full bg-red-500"></div>
@@ -93,7 +93,7 @@ function CodeEditor({
                   {typeof icon !== 'string' ? icon : null}
                 </div>
               ) : null}
-              <figcaption className="flex-1 truncate text-muted-foreground text-[13px]">
+              <figcaption className="flex-1 truncate text-white text-[13px]">
                 {title}
               </figcaption>
             </div>

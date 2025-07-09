@@ -1,5 +1,5 @@
 function Navbar({ onSelect, disabled, activeMenu }) {
-    const menus = ["Home","Project", "Skills", "Experience", "Certificate", "Contact"];
+    const menus = ["Home","Education","Project", "Skills", "Experience", "Contact"];
   
     return (
       <div className="w-full flex justify-center">

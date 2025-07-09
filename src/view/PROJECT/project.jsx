@@ -62,7 +62,7 @@ function Project() {
   return (
     <div className="grid grid-cols-2 grid-rows-1 gap-4">
       {/* Sidebar */}
-      <div className="w-100 h-[20rem] overflow-y-auto border border-white rounded-md">
+      <div className="w-100 h-[20rem] overflow-y-auto ">
         <Files className="size-full">
           {Object.keys(projectDetails).map((folderName) => (
       <Folder
@@ -91,7 +91,7 @@ function Project() {
 
       {/* Detail Panel */}
       <div>
-        <div className="w-100 rounded-xl border bg-background p-4 shadow-md border-white h-[20rem] overflow-auto">
+        <div className="w-100 rounded-xl border bg-none p-4 shadow-md border-white h-[20rem] overflow-auto">
           <div className="flex flex-col gap-4">
             {/* Preview Image */}
             <img

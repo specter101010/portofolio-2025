@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename)
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   server: {
-    allowedHosts: ['c41f942c9fce.ngrok-free.app'],
+    allowedHosts: ['96c36b753fe5.ngrok-free.app'],
     host: true
   },
   resolve: {

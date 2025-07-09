@@ -6,11 +6,11 @@ import './App.css';
 import Skills from "./view/SKILLS/skills";
 import About from "./view/ABOUT/about";
 import Project from "./view/PROJECT/project";
+import Education from "./view/EDUCATION/education";
+import Experience from "./view/EXPERIENCE/experience";
+import { Contact } from "./view/CONTACT/contact";
 
 // Komponen dummy
-const Experience = () => <div className="text-white">📘 Experience Component</div>;
-const Certificate = () => <div className="text-white">📄 Certificate Component</div>;
-const Contact = () => <div className="text-white">📞 Contact Component</div>;
 
 function App() {
   const [selectedMenu, setSelectedMenu] = useState("About"); // Default pertama: About (Home)
@@ -55,7 +55,7 @@ function App() {
       case "Project": return <Project />;
       case "Skills": return <Skills />;
       case "Experience": return <Experience />;
-      case "Certificate": return <Certificate />;
+      case "Education": return <Education />;
       case "Contact": return <Contact />;
       case "About": return <About />;
       default: return null;
