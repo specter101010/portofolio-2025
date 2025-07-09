@@ -1,0 +1,294 @@
+.train_hidden {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  
+  .train_come {
+    animation: moveIn 2.5s ease-out forwards;
+  }
+  
+  .train_go {
+    animation: moveOut 2s ease-in forwards;
+  }
+  
+  .train_stay {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+  
+  @keyframes moveIn {
+    0% {
+      opacity: 1;
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(100px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveOut {
+    0% {
+      transform: translateX(100px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(1000px);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+
+.train_base{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    background-color: #FFFCFB;
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 15px;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.train_base::after{
+    position: absolute;
+    content: " ";
+    width: 40px;
+    height: 20px;
+    background-color: #393E46;
+    transform: translateY(10px)translateX(115px);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 4px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.train_base::before{
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 30px;
+    background-color: #B2C6D5;
+    transform: translateX(162px)rotate(-40deg);
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.window_train{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #393E46;
+    transform: translateX(-10px)translateY(-5px);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.window_train::after{
+    position: absolute;
+    content: " ";
+    width: 35px;
+    height: 20px;
+    background-color: #393E46;
+    transform: translateX(-45px)translateY(0px);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.road_train{
+    position: absolute;
+    width: 155px;
+    height: 4px;
+    transform: translateY(25px)translateX(-6px);
+    background-color:#222831 ;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0.3px solid #22283144;
+}
+
+
+.ventilation_train{
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color:#f0f5f8 ;
+    transform: translateY(-25px)translateX(-55px);
+    border: 0.3px solid #22283144;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.list_train{
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    background-color: #4B70F5;
+    transform: translateY(12px);
+}
+
+
+
+.railcr_body{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    background-color: #FFFCFB;
+    transform: translateX(-280px)translateY(-25px);
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.window_railcar{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #393E46;
+    transform: translateX(-160px)translateY(-15px);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.window_railcar::after{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    content: " ";
+    background-color: #393E46;
+    transform: translateX(-60px)translateY(0px);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.window_railcar::before{
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    content: " ";
+    background-color: #393E46;
+    transform: translateX(-110px)translateY(0px);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.road_railcar{
+    position: absolute;
+    width: 160px;
+    height: 4px;
+    transform: translateY(23px)translateX(-270px);
+    background-color:#222831 ;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0.3px solid #22283144;
+}
+
+.ventilation_railcar{
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color:#f0f5f8 ;
+    transform: translateY(-28px)translateX(-160px);
+    border: 0.3px solid #22283144;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.ventilation_railcar::before{
+    position: absolute;
+    content: " ";
+    width: 35px;
+    height: 5px;
+    background-color:#f0f5f8 ;
+    transform: translateY(-0px)translateX(-90px);
+    border: 0.3px solid #22283144;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.list_railcar{
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    background-color: #4B70F5;
+    transform: translateY(9px) translateX(-280px);
+}
+
+.train_conection_1{
+    width: 7px;
+    height: 48px;
+    position: absolute;
+    background-color: #222831;
+    transform: translateX(-96px);
+    border:0.1px solid #4B70F5;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.train_conection_1::after{
+    width: 0.7px;
+    height: 45px;
+    position: absolute;
+    content: " ";
+    background-color: #4B70F5;
+    transform: translateY(0px)translateX(4px);
+}

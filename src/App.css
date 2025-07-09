@@ -1,0 +1,22 @@
+.content-enter {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .content-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .content-exit {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 2s ease;
+  }
+  
+  .content-exit-active {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
